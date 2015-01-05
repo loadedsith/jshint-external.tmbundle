@@ -13,6 +13,11 @@ Zepto(document).ready(function($) {
       }
     }, 1);
   });
+  //Close the report window when clickie on close 'x'
+  $('#close').on('click',function () {
+    //Close the report window when clickie on close 'x'
+    TextMate.system('osascript -e \'tell application "System Events" to keystroke "h" using {command down, control down, option down}\'',function(){/*console.log('done')*/});
+  });
 
   // close the report window when the user presses ESCape
   $(document).keydown(function(e) {
