@@ -38,6 +38,7 @@ View the [release notes](https://github.com/natesilva/jshint-external.tmbundle/r
 In most cases no configuration is required. However, in some cases you may want to customize the following:
 
 * **Use `jshint` that is not on your `PATH`:** If `jshint` is not on your `PATH`, set the `TM_JSHINT_EXTERNAL_JSHINT` variable to point to it. Set in *TextMate* > *Preferences…* > *Variables*.
+* **Use with `nvm` (running the plugin after installing jshint still throws "env: node: No such file or directory"):**  If you are using NVM, add the current NVM path to TextMate's `PATH`: Set in *TextMate* > *Preferences…* > *Variables*. It is likely to match "/Users/[User]/.nvm/[`nvm current`]/bin", where `nvm current` is the version given by the command `nvm current`, eg; /Users/username/.nvm/v0.10.16/bin.
 * **Don’t validate on save:** If you don’t want to validate your JavaScript automatically when you press `⌘S`:
     1. Open the Bundle Editor (*Bundles* > *Edit Bundles…*).
     2. Navigate to *JSHint (External)* > *Menu Actions* > *Save & Validate with JSHint*.
